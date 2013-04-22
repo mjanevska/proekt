@@ -1,0 +1,44 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+Insert prostorii:</br>
+#{form @Application.postProstorija() }
+	<table>
+		<tr>
+			<td>Ime: </td>
+			<td><input type="text" name="ime" id="ime"/></td>
+		</tr>
+		<tr>
+			<td>Zgrada: </td>
+			<td><input type="text" name="zgrada" id="zgrada"/></td>
+		</tr>
+		<tr>
+			<td>Kat: </td>
+			<td><input type="text" name="kat" id="kat"/></td>
+		</tr>
+		<tr>
+			<td>Lokacija: </td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Point 1X: </td>
+			<td><input type="text" name="point1X" id="point1X"/></td>
+		</tr>
+		<tr>
+			<td>Point 1Y: </td>
+			<td><input type="text" name="point1Y" id="point1Y"/></td>
+		</tr>
+		<tr>
+			<td>Point 2X: </td>
+			<td><input type="text" name="point2X" id="point2X"/></td>
+		</tr>
+		<tr>
+			<td>Point 2Y: </td>
+			<td><input type="text" name="point2Y" id="point2Y"/></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Add Prostorija"/></td>
+		</tr>
+	</table>
+#{/form}

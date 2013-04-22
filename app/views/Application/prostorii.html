@@ -1,0 +1,26 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{if prostorii}
+	<table>
+  		<tr>
+		    <th>Ime</th>
+		    <th>Zgrada</th>
+		    <th>Kat</th>
+  		</tr>
+	%{
+     	for(p in prostorii) 
+     	{ 
+	}%
+<!--      		<li>${account}</li> -->
+     		<tr>
+				<th>${p.ime}</th>
+		    	<th>${p.zgrada}</th>
+		    	<th>${p.kat}</th>
+			</tr>
+	%{
+    	 }
+	}%
+
+</table>
+#{/if}
